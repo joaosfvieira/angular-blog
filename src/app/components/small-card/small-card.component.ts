@@ -10,4 +10,6 @@ export class SmallCardComponent {
   photoCover: string = 'https://marcdias.com.br/wp-content/uploads/2016/07/reactjs.png';
   @Input()
   cardTitle: string = 'Essa é a nossa notícia secundária. Ela fica ao lado da página.';
+  @Input()
+  id: string = "0";
 }
