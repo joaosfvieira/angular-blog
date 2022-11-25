@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-small-card',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./small-card.component.css']
 })
 export class SmallCardComponent {
-
+  @Input()
+  photoCover: string = 'https://marcdias.com.br/wp-content/uploads/2016/07/reactjs.png';
+  @Input()
+  cardTitle: string = 'Essa é a nossa notícia secundária. Ela fica ao lado da página.';
 }
